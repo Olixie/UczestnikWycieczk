@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Uczestnik</string>
+    <string name="mapa" />
+    <string name="komunikat" />
+    <string name="znajdz_przewodnika" />
+    <string name="plan_wycieczki" />
+    <string name="lista_uczestnik_w" />
+    <string name="zr_b_zdj_cie" />
+    <string name="notatki" />
+    <string name="button">Button</string>
+
+
+</resources>
