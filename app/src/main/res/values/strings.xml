@@ -8,6 +8,7 @@
     <string name="zr_b_zdj_cie" />
     <string name="notatki" />
     <string name="button">Button</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

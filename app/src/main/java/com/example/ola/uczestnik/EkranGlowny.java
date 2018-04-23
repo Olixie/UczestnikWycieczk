@@ -1,7 +1,9 @@
 package com.example.ola.uczestnik;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
@@ -16,5 +18,10 @@ public class EkranGlowny extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ekran_glowny);
 
+    }
+
+    public void runMap (View view) {
+        Intent intencja = new Intent(this, MapsActivity.class);
+        startActivity(intencja);
     }
 }
