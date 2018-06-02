@@ -24,4 +24,12 @@ public class EkranGlowny extends AppCompatActivity {
         Intent intencja = new Intent(this, MapsActivity.class);
         startActivity(intencja);
     }
+    public void showAparat(View view){
+        Intent intencja = new Intent(this, Zrob_Zdjecie.class);
+        startActivity(intencja);
+    }
+    public void showWycieczkaList(View view){
+        Intent intencja = new Intent(this, Plan_Wycieczki.class);
+        startActivity(intencja);
+    }
 }
