@@ -4,68 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgr"
     tools:context=".EkranGlowny">
 
 
-    <android.support.v7.widget.GridLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+    <Button
+        android:id="@+id/b_mapa"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:background="@drawable/light_btn_border"
+        android:drawableTop="@drawable/map"
+        android:onClick="runMap"
+        android:padding="25dp"
+        android:text="runMap"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_plan"
+        app:layout_constraintEnd_toStartOf="@+id/b_komunikat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/b_zdjecie"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/light_btn_border"
+        android:drawableTop="@drawable/camera2"
+        android:onClick="showAparat"
+        android:padding="25dp"
+        android:text="Zdjęcia"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b_notatki"
+        app:layout_constraintTop_toBottomOf="@+id/b_plan" />
+
+
+
+    <Button
+        android:id="@+id/b_notatki"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/dark_btn_border"
+        android:drawableTop="@drawable/notepad"
+        android:padding="25dp"
+        android:text="Notatki"
+        android:textColor="#e3e5e8"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b_zdjecie"
+        app:layout_constraintTop_toBottomOf="@+id/b_przewodnik"/>
+
+
+
+    <Button
+        android:id="@+id/b_przewodnik"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/light_btn_border"
+        android:drawableTop="@drawable/route"
+        android:padding="25dp"
+        android:text="Znajdź przewodnika"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/b_notatki"
+        app:layout_constraintStart_toEndOf="@+id/b_plan"
+        app:layout_constraintTop_toBottomOf="@+id/b_komunikat"/>
+
+
+
+    <Button
+        android:id="@+id/b_plan"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/dark_btn_border"
+        android:drawableTop="@drawable/calendar"
+        android:onClick="showWycieczkaList"
+        android:padding="25dp"
+        android:text="Plan wycieczki"
+        android:textColor="#e3e5e8"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/b_zdjecie"
+        app:layout_constraintEnd_toStartOf="@+id/b_przewodnik"
+        app:layout_constraintTop_toBottomOf="@+id/b_mapa"/>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mapa"
-            android:onClick="runMap"/>
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Aparat"
-            android:onClick="showAparat"
-            app:layout_column="0"
-            app:layout_row="1" />
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Galeria"
-            app:layout_column="0"
-            app:layout_row="2" />
+    <Button
+        android:id="@+id/b_komunikat"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dark_btn_border"
+        android:drawableTop="@drawable/envelop"
+        android:padding="25dp"
+        android:text="Wiadomości"
+        android:textColor="#e3e5e8"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/b_przewodnik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b_mapa"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Notatki"
-            app:layout_column="0"
-            app:layout_row="3" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Znajdz Przewodnika"
-            app:layout_column="0"
-            app:layout_row="4" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Plan wycieczki"
-            android:onClick="showWycieczkaList"
-            app:layout_column="0"
-            app:layout_row="5" />
-    </android.support.v7.widget.GridLayout>
 </android.support.constraint.ConstraintLayout>
+
