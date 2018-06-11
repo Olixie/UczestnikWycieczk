@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rambler U</string>
+    <string name="app_name">RamblerU</string>
     <string name="mapa" />
     <string name="komunikat" />
     <string name="znajdz_przewodnika" />
@@ -9,6 +9,7 @@
     <string name="notatki" />
     <string name="button">Button</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_znajdz_przewodnika">Map</string>
 
 
 </resources>
